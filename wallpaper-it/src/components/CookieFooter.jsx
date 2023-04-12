@@ -10,7 +10,7 @@ const CookieFooter = () => {
   return (
     <div className="sticky bottom-0 w-full bg-white">
       {!isAccepted && (
-        <div className="w-full flex flex-col lg:flex-row items-center justify-center space-x-5 py-5">
+        <div className="w-full flex flex-col lg:flex-row items-center justify-center lg:space-x-5 py-5">
           <p className="">
             This site uses cookies to improve your experience. By clicking, you
             agree to our Privacy Policy.

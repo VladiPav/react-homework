@@ -1,20 +1,24 @@
-import './App.css';
-import Header from './components/Header';
+import "./App.css";
+import Header from "./components/Header";
 
-import React from 'react'
-import ProductList from './components/ProductList';
-import Footer from './components/Footer';
-import CookieFooter from './components/CookieFooter';
+import React from "react";
+import ProductList from "./components/ProductList";
+import Footer from "./components/Footer";
+import CookieFooter from "./components/CookieFooter";
+import Navbar from "./components/NavBar/Navbar";
+import RollingPromoBar from "./components/RollingPromoBar";
 
 const App = () => {
   return (
     <div className="App min-h-screen w-full ">
+      <Navbar />
+      <RollingPromoBar />
       <Header />
       <ProductList />
       <Footer />
-      <CookieFooter/>
+      <CookieFooter />
     </div>
-  )
-}
+  );
+};
 
 export default App;
