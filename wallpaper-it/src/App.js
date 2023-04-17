@@ -2,7 +2,7 @@ import "./App.css";
 import Header from "./components/Header";
 
 import React from "react";
-import ProductList from "./components/ProductList";
+import ProductList from "./components/Product/ProductList";
 import Footer from "./components/Footer";
 import CookieFooter from "./components/CookieFooter";
 import Navbar from "./components/NavBar/Navbar";
