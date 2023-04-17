@@ -3,8 +3,10 @@ import React from "react";
 const Header = () => {
   return (
     <header className="w-full text-center">
-      <h1 className="text-3xl font-bold">Animal Wallpaper</h1>
-      <p className="text-xl px-10">
+      <h1 className="text-3xl font-bold font-['DMSerifDisplay','serif']">
+        Animal Wallpaper
+      </h1>
+      <p className="text-xl px-10 font-[avenir] font-semibold">
         When it comes to adding a dose of exotic chic to your home, you can’t go
         wrong with our animal print wallpaper. From tiny critters to magnificent
         beasts, we’ve got an impressive selection of gorgeous animal wallpaper

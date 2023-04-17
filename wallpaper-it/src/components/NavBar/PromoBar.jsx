@@ -11,7 +11,7 @@ const PromoBar = () => {
     <>
       {!isClosed && (
         <div id="promo-bar" className=" bg-primary p-1">
-          <p className="flex items-center justify-center">
+          <p className="flex items-center justify-center font-[avenir]">
             FREE DELIVERY* AND FREE RETURNS
           </p>
           <button

@@ -13,9 +13,11 @@ const Accordion = ({ title, content }) => {
         className=" pointer-events-auto lg:pointer-events-none flex justify-between items-center p-4"
         onClick={() => toggleOpen()}
       >
-        <p className="font-medium">{title}</p>
+        <p className="font-medium font-[DMSerifDisplay,serif] text-xl">
+          {title}
+        </p>
         <svg
-          className={`block lg:hidden w-5 h-5 transform ${
+          className={`block lg:hidden w-8 h-8 transform ${
             isOpen === true ? "rotate-180" : ""
           }`}
           viewBox="0 0 20 20"
@@ -31,7 +33,9 @@ const Accordion = ({ title, content }) => {
       <div className={`lg:block p-4 ${isOpen === true ? "block" : "hidden"}`}>
         <ul>
           {content.map((item) => (
-            <li className="pb-5 px-4 text-16 md:px-0 font-light">{item}</li>
+            <li className="pb-5 px-4 text-16 md:px-0 font-light font-[avenir]">
+              {item}
+            </li>
           ))}
         </ul>
       </div>

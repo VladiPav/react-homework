@@ -1,14 +1,14 @@
 import React from "react";
+import StarRating from "./StarRating";
 
 const ProductTile = (props) => {
   const { name, price, img } = props;
-
   return (
     <article className="">
       <img src={img} alt="Missing"></img>
-      <p className=" pt-2 text-left">{name}</p>
+      <p className=" pt-2 text-left font-[avenir]">{name}</p>
       <div className="w-full flex justify-between">
-        <p>{price}</p>
+        <p>£{(+price).toFixed(2)}</p>
         <button className="pointer-events-none">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -23,7 +23,7 @@ const ProductTile = (props) => {
           </svg>
         </button>
       </div>
-      <p className="text-left text-xs">PER ROLL</p>
+      <p className="text-left text-xs font-[avenir]">PER ROLL</p>
     </article>
   );
 };

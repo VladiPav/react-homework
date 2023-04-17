@@ -7,6 +7,7 @@ import Footer from "./components/Footer";
 import CookieFooter from "./components/CookieFooter";
 import Navbar from "./components/NavBar/Navbar";
 import RollingPromoBar from "./components/RollingPromoBar";
+import StarRating from "./components/Product/StarRating";
 
 const App = () => {
   return (
