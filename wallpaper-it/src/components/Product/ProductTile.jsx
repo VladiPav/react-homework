@@ -1,11 +1,13 @@
 import React from "react";
+import StarRating from "./StarRating";
 
 const ProductTile = (props) => {
-  const { name, price, img } = props;
+  const { name, price, img, rating } = props;
   return (
     <article className="">
       <img src={img} alt="Missing"></img>
       <p className=" pt-2 text-left font-[avenir]">{name}</p>
+      <StarRating rating={rating} />
       <div className="w-full flex justify-between">
         <p>£{(+price).toFixed(2)}</p>
         <button className="pointer-events-none">

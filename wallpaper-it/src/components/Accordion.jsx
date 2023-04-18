@@ -33,7 +33,10 @@ const Accordion = ({ title, content }) => {
       <div className={`lg:block p-4 ${isOpen === true ? "block" : "hidden"}`}>
         <ul>
           {content.map((item) => (
-            <li className="pb-5 px-4 text-16 md:px-0 font-light font-[avenir]">
+            <li
+              key={Math.random()}
+              className="pb-5 px-4 text-16 md:px-0 font-light font-[avenir]"
+            >
               {item}
             </li>
           ))}
