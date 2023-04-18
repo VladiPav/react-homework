@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import PromoBar from "./PromoBar";
 import logo from "../../assets/wallpaperit-Logo.png";
 import NavItem from "./NavItem";
@@ -53,7 +53,7 @@ const Navbar = () => {
             </span>
           </div>
         </div>
-        <div className="hidden lg:flex justify-around">
+        <div className="hidden relative lg:flex justify-around">
           <NavItem name="wallpaper" hasDownArrow={true} />
           <NavItem name="paint" hasDownArrow={true} />
           <NavItem name="brands" hasDownArrow={true} />

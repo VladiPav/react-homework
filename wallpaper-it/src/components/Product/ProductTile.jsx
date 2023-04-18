@@ -1,5 +1,4 @@
 import React from "react";
-import StarRating from "./StarRating";
 
 const ProductTile = (props) => {
   const { name, price, img } = props;
